@@ -32,9 +32,9 @@ public class seleniumTest {
         assertEquals(locator, "Web Playground");
 
         // Click weird button
-
-        by = driver.findElement(By.xpath("//div/a"));
-
+        String st = "//div/a[@role=\"button\"]";
+        driver.findElement(By.xpath(st)).click();
+        driver.findElement(By.xpath(st)).click();
         //Type "Rodrigo" in forename form
         by = driver.findElement(By.id("forename"));
         by.sendKeys("Rodrigo");
