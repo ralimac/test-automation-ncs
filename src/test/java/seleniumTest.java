@@ -28,7 +28,7 @@ public class seleniumTest {
 //        String s = ".h1.display-1.mb-3";
 //        String locator = driver.findElement(By.cssSelector(s)).getText();
 
-        String locator = driver.findElement(By.xpath("//h1")).getText();
+        String locator = driver.findElement(By.xpath("//h1[@class=\"display-1 mb-3\"]")).getText();
         assertEquals(locator, "Web Playground");
 
         // Click weird button
